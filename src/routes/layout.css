@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--color-text: #edeeee;
+	--color-background: #090b0a;
+	--color-primary: #00410a;
+	--color-secondary: #007f14;
+	--color-accent: #00ff27;
+}
