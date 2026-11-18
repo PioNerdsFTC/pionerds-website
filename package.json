@@ -2,18 +2,19 @@
 	"name": "pionerds-website",
 	"version": "0.0.1",
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^7.0.1",
-		"@sveltejs/kit": "^2.63.0",
-		"@sveltejs/vite-plugin-svelte": "^7.1.2",
-		"@tailwindcss/vite": "^4.3.0",
-		"prettier": "^3.8.3",
-		"prettier-plugin-svelte": "^4.1.0",
-		"prettier-plugin-tailwindcss": "^0.8.0",
-		"svelte": "^5.56.1",
-		"svelte-check": "^4.6.0",
-		"tailwindcss": "^4.3.0",
+		"@sveltejs/adapter-auto": "^8.0.1",
+		"@sveltejs/kit": "^3.3.0",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
+		"@tailwindcss/vite": "^4.3.5",
+		"mdsvex": "^0.12.8",
+		"prettier": "^3.10.1",
+		"prettier-plugin-svelte": "^4.2.0",
+		"prettier-plugin-tailwindcss": "^0.8.1",
+		"svelte": "^5.57.3",
+		"svelte-check": "^4.7.8",
+		"tailwindcss": "^4.3.5",
 		"typescript": "^6.0.3",
-		"vite": "^8.0.16"
+		"vite": "^8.3.8"
 	},
 	"private": true,
 	"scripts": {
@@ -28,7 +29,13 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@lucide/svelte": "^1.46.0",
+		"@lucide/svelte": "^1.74.0",
+		"@types/bun": "^1.4.4",
+		"@types/node": "^26.6.6",
 		"lucide-svelte": "^1.0.1"
+	},
+	"imports": {
+		"#lib": "./src/lib/index.ts",
+		"#lib/*": "./src/lib/*"
 	}
 }

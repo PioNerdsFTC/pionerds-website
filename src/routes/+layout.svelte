@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.png';
+	import favicon from '#lib/assets/favicon.png';
 	import { goto } from '$app/navigation';
 
 	let { children } = $props();
@@ -10,7 +10,8 @@
 			title: 'home'
 		},
 		{
-			title: 'about'
+			title: 'about',
+			url: '/about'
 		},
 		{
 			title: 'blog',
@@ -25,13 +26,13 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<div class="fixed top-0 right-0 left-0 border-b border-secondary bg-background/50 backdrop-blur-md">
-	<div class="flex justify-between bg-secondary/20">
-		<div class="flex flex-row items-center p-2 px-4">
+<div class="flex flex-col">
+	<div class="flex flex-col sm:flex-row justify-between bg-secondary/20 border-b border-secondary bg-background/50 backdrop-blur-md">
+		<div class="flex flex-row justify-center sm:justify-start items-center p-2 px-4">
 			<img alt="PioNerds Logo" src={favicon} class="h-12 w-12" />
 			<span class="p-3 text-4xl text-text" style="font-family: 'Space Mono';"> PioNerds </span>
 		</div>
-		<div class="mr-2 flex flex-row items-center">
+		<div class="mr-2 flex md:flex-row flex-col items-center">
 			{#each links as link}
 				<button
 					style="font-family: 'Space Mono';"
@@ -43,7 +44,5 @@
 			{/each}
 		</div>
 	</div>
-</div>
-<div class="">
 	{@render children()}
 </div>

@@ -1,103 +1,84 @@
 <script lang="ts">
-	import hmLogo from '$lib/assets/hm-logo.webp';
-	import favicon from '$lib/assets/favicon.png';
-	import teamTemp from '$lib/assets/team-temp.webp';
+	import hmLogo from '#lib/assets/hm-logo.webp';
+	import favicon from '#lib/assets/favicon.png';
+	import teamTemp from '#lib/assets/team-temp.webp';
 	import { goto } from '$app/navigation';
 </script>
 
-<div
-	class="h-screen min-h-screen min-w-screen bg-secondary/20 text-text"
-	style="font-family: 'Fira Mono';"
->
+<div class="h-screen min-h-screen min-w-screen text-text" style="font-family: 'Fira Mono';">
 	<main class="flex flex-col">
-		<div class="flex h-screen w-screen flex-col items-center justify-between md:flex-row">
-			<div class="flex w-max flex-col justify-center p-4">
-				<div class="mt-[5vh] max-w-[50vw] p-4 text-3xl md:mt-0">Hill-Murray PioNerds</div>
-				<div class="text-md max-w-[40vw] p-4 text-text/90">
-					FIRST team from Maplewood, MN. We inspire students to become leaders in STEM by providing
-					them ways to build a foundation of technical, social skills and values by solving
-					engineering challenges with the mentorship of industry professionals
+		<div class="flex min-h-screen w-screen flex-col justify-between bg-secondary/20 md:flex-row">
+			<div class="flex w-max grow flex-col items-center justify-center p-4 md:mb-[10vh]">
+				<div
+					class="flex max-w-[90vw] items-center justify-center p-4 text-5xl md:mt-0 md:max-w-[50vw]"
+				>
+					Hill-Murray PioNerds
 				</div>
+				<p class="max-w-[90vw] p-4 text-2xl text-text/90 md:max-w-[40vw]">
+					We inspire students to become leaders in STEM by providing them ways to build a foundation
+					of technical, social skills and values by solving engineering challenges with the
+					mentorship of industry professionals
+				</p>
 			</div>
-			<div>
-				<img src={teamTemp} class="m-3 max-w-[40vw]" alt="PioNerds in 2025" />
-				<span class="ml-4">The PioNerds in 2025</span>
+			<div class="flex w-max flex-col items-start p-2 md:mt-[10vh]">
+				<img src={teamTemp} class="m-3 max-w-[90vw] md:max-w-[40vw]" alt="PioNerds in 2025" />
+				<span class="ml-4">The PioNerds during the 2025 season!</span>
 			</div>
 		</div>
 
 		<div
-			class="flex h-screen w-screen flex-col border-t border-secondary bg-secondary/5 p-4 pt-[10vh]"
+			class="flex max-h-screen w-screen flex-col border-t border-secondary bg-secondary/5 p-4 pt-[10vh] pb-[10vh]"
 		>
-			<div class="w-min p-4 text-text">
-				<h1 class="text-3xl">Resources</h1>
+			<div
+				class="flex flex-col p-4 text-text sm:max-w-full sm:justify-center md:max-w-[40vw] md:justify-start"
+			>
+				<h1 class="text-3xl">About us</h1>
+				<div class="flex w-[90vw] flex-row justify-between">
+					<p class="max-w-[40vw] pt-4 text-2xl">
+						The PioNerds is a team of dedicated students who strive to embody the core values of
+						FIRST. We collaborate to establish problem solving skills and the fundamentals of STEM
+						learning as well as strengthen relationships between members of the team and the
+						community. The students generate a positive, respectful, and comprehensive working
+						environment. Together we thrive to become the next generation of leaders who create
+						undeniable change in their future career fields.
+					</p>
+					<img alt="Image" />
+				</div>
 			</div>
 		</div>
 	</main>
-	<footer class="flex min-h-[30vh] w-screen flex-col justify-center gap-4 bg-primary/10 p-4">
-		<div class="underline underline-offset-2">Github</div>
-		<div class="underline underline-offset-2">Facebook</div>
+	<footer
+		class="flex min-h-[30vh] w-screen flex-col gap-4 border-t border-secondary bg-primary/30 p-4"
+	>
+		<span class="mb-4 text-4xl">Connect with us!</span>
+		<div class="flex flex-row">
+			<div class="flex flex-col gap-2">
+				<a class="underline underline-offset-2" href="" target="_blank" rel="noopener noreferrer">
+					Youtube
+				</a>
+				<a class="underline underline-offset-2" href="" target="_blank" rel="noopener noreferrer">
+					Facebook
+				</a>
+				<a class="underline underline-offset-2" href="" target="_blank" rel="noopener noreferrer">
+					X
+				</a>
+			</div>
+
+			<div class="flex flex-col gap-2 pl-[5vw]">
+				<span class="mb-2">Development</span>
+				<a
+					class="underline underline-offset-2"
+					href="https://github.com/PioNerdsFTC"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Github
+				</a>
+			</div>
+		</div>
 	</footer>
 </div>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-	#bar::after {
-		position: absolute;
-		top: 0px;
-		right: -20px;
-
-		background-color: color-mix(
-			in oklab,
-			var(--color-secondary) 10%,
-			var(--color-background)
-		); /* var(--bg-secondary); */
-
-		content: ' ';
-		width: 20px;
-		height: 20px;
-		border-top-left-radius: var(--radius-xl);
-	}
-
-	#bar::before {
-		position: absolute;
-		top: 0px;
-		right: -20px;
-
-		background-color: var(--color-secondary);
-		content: ' ';
-		width: 20px;
-		height: 20px;
-	}
-	/*
-
-	*/
-	/*
-	#bar::after {
-		background-color: #000000;
-		position: absolute;
-		bottom: -50px;
-		right: 0px;
-
-		content: ' ';
-
-		width: 50px;
-		height: 50px;
-
-		border-top-right-radius: var(--radius-xl);
-	}
-
-	#bar::before {
-		position: absolute;
-
-		bottom: -10px;
-		right: 0px;
-
-		background-color: red;
-
-		width: 10px;
-		height: 10px;
-
-		content: ' ';
-	}*/
 </style>
