@@ -8,17 +8,17 @@
 	};
 
 	const blogs: Blog[] = $state([
-		{
-			title: 'Hello, World!',
-			description: 'Interviews with the 2025-2026 team',
-			page: 'hello-world'
-		},
+		// {
+		// 	title: 'Hello, World!',
+		// 	description: 'Interviews with the 2025-2026 team',
+		// 	page: 'hello-world'
+		// },
 
-		{
-			title: 'Hello, World!',
-			description: 'Interviews with the 2025-2026 team',
-			page: 'hello-world'
-		}
+		// {
+		// 	title: 'Hello, World!',
+		// 	description: 'Interviews with the 2025-2026 team',
+		// 	page: 'hello-world'
+		// }
 	]);
 </script>
 

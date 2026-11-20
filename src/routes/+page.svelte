@@ -10,14 +10,12 @@
 		<div class="flex min-h-screen w-screen flex-col justify-between bg-secondary/20 md:flex-row">
 			<div class="flex w-max grow flex-col items-center justify-center p-4 md:mb-[10vh]">
 				<div
-					class="flex max-w-[90vw] items-center justify-center p-4 text-5xl md:mt-0 md:max-w-[50vw]"
+					class="flex max-w-[90vw] items-center font-bold justify-center p-4 text-text text-5xl md:mt-0 md:max-w-[50vw]"
 				>
 					Hill-Murray PioNerds
 				</div>
-				<p class="max-w-[90vw] p-4 text-2xl text-text/90 md:max-w-[40vw]">
-					We inspire students to become leaders in STEM by providing them ways to build a foundation
-					of technical, social skills and values by solving engineering challenges with the
-					mentorship of industry professionals
+				<p class="max-w-[90vw] p-4 text-2xl text-secondary/90 md:max-w-[40vw] text-secondary/90">
+					We inspire students to become leaders
 				</p>
 			</div>
 			<div class="flex w-max flex-col items-start p-2 md:mt-[10vh]">
