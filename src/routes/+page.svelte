@@ -51,6 +51,7 @@
 		<span class="mb-4 text-4xl">Connect with us!</span>
 		<div class="flex flex-row">
 			<div class="flex flex-col gap-2">
+			<span class="mb-2 text-lg">Outreach</span>
 				<a class="underline underline-offset-2" href="" target="_blank" rel="noopener noreferrer">
 					Youtube
 				</a>
@@ -63,7 +64,7 @@
 			</div>
 
 			<div class="flex flex-col gap-2 pl-[5vw]">
-				<span class="mb-2">Development</span>
+			<span class="mb-2 text-lg">Development</span>
 				<a
 					class="underline underline-offset-2"
 					href="https://github.com/PioNerdsFTC"
