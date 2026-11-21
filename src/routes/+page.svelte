@@ -52,13 +52,13 @@
 		<div class="flex flex-row">
 			<div class="flex flex-col gap-2">
 			<span class="mb-2 text-lg">Outreach</span>
-				<a class="underline underline-offset-2" href="" target="_blank" rel="noopener noreferrer">
+				<a class="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
 					Youtube
 				</a>
-				<a class="underline underline-offset-2" href="" target="_blank" rel="noopener noreferrer">
+				<a class="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
 					Facebook
 				</a>
-				<a class="underline underline-offset-2" href="" target="_blank" rel="noopener noreferrer">
+				<a class="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
 					X
 				</a>
 			</div>
