@@ -153,6 +153,14 @@
     url = "https://registry.npmjs.org/@sveltejs/adapter-auto/-/adapter-auto-8.0.1.tgz";
     hash = "sha512-JXpRDJy/HxzhZsGS68C/SZ8BlndsfcGf/0X73WB05DAQJMR4Vi6k0hBYT+ZPgPxU4L0+G+irAHPN05YNCCGszA==";
   };
+  "@sveltejs/adapter-node@6.0.5" = fetchurl {
+    url = "https://registry.npmjs.org/@sveltejs/adapter-node/-/adapter-node-6.0.5.tgz";
+    hash = "sha512-CcQ9Cnvns+PhI4tHKRrV63UcZqZ2+Dnaa4c65E9WSO932LsSpyWk9WLyiwUTRa7CLX5lCJAppoEEz1A0t6p8lQ==";
+  };
+  "@sveltejs/adapter-server@0.1.0" = fetchurl {
+    url = "https://registry.npmjs.org/@sveltejs/adapter-server/-/adapter-server-0.1.0.tgz";
+    hash = "sha512-+IlBRTkHENyrVd24pTntoVqwonw2JjkZQD1kyZBnIqJsEtdHzLMdIs+b3p9AiWEzfTNZwVK/IaHGlzgyGiPX0w==";
+  };
   "@sveltejs/kit@3.3.0" = fetchurl {
     url = "https://registry.npmjs.org/@sveltejs/kit/-/kit-3.3.0.tgz";
     hash = "sha512-h/JZ0+YVBEEiQ94Xqz/yqTPHwFjbH5kVT4X6NhZ/Xi/aYIYve46S/RDQ6FRPBTzkruvznFJwHci9CFUVVak6jQ==";
