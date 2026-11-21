@@ -102,7 +102,7 @@
 
             users.groups.${group} = { };
 
-            systemd.services.homepage = {
+            systemd.services.pionerds-website = {
               description = "PioNerds Website";
               after = [ "network-online.target" ];
               wants = [ "network-online.target" ];
